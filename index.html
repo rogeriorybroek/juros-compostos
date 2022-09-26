@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros Compostos</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+    
+
+</head>
+<body>
+
+    <section class="container">
+
+        <div class="logo">
+            <h1>Money</h1>
+            <span>Maker</span>
+        </div>
+
+        <div class="first-page">
+            <form class="form" id="form" action="">
+
+                <h1>Simulador</h1>
+
+                <div class="info">
+                    <label for="name">Nome:
+                        <input type="text" placeholder="Digite seu nome" id="name">
+                        <span class="span-error"></span>
+                    </label>
+                </div>
+
+                <div class="info">
+                    <label for="name">Aporte Mensal:
+                        <input type="text" placeholder="R$ 00,00" id="amount">
+                        <span class="span-error"></span>
+                    </label>
+                </div>
+
+                <div class="info">
+                    <label for="name">Taxa de Juros:
+                        <input type="text" placeholder="0,00%" id="tax">
+                        <span class="span-error"></span>
+                    </label>
+                </div>
+
+                
+                <div class="time">
+
+                    <h2>Quanto tempo o valor ficará aplicado?</h2>
+
+                    <div class="time-wrapper">
+
+                        <label for="timeValue" class="time-value">
+                            <input type="number" name="timeValue" id="time-value">
+                            <span class="span-error"></span>
+                        </label>
+                        
+                        <label for="monthOrYear" >Meses
+                            <input type="radio" name="monthOrYear" value="month" id="radio">
+                        </label>
+                        
+                        <label for="monthOrYear">Anos
+                            <input type="radio" name="monthOrYear" value="year" id="radio">
+                        </label>
+                        <span class="span-error" id="spanMonthOrYear"></span>
+                    </div>
+
+                </div>
+
+                <div class="button">
+                    <button id="btn-submit" type="submit">Simular</button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="second-page hidden">
+            <img src="./loading.gif" class="spinner hidden" alt="loading gif">
+            <div class="result-display"></div>
+        </div>
+        
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border: 3px solid #ffc709;
+  border-radius: 1.4rem;
+  width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: 90vh;
+  text-align: center;
+  background-color: black;
+}
+.container .logo {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(116, 113, 113);
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom: 3px solid #ffc709;
+  padding: 1rem;
+}
+.container .logo h1 {
+  color: #ffc709;
+  font-size: 2rem;
+}
+.container .logo span {
+  color: #222;
+  font-size: 2rem;
+}
+.container .first-page {
+  padding-top: 1rem;
+  height: 100%;
+}
+.container .first-page .form {
+  width: 80%;
+  margin: auto;
+}
+.container .first-page .form h1 {
+  font-size: 1.7rem;
+  color: #ffc709;
+  border-bottom: 2px solid #222;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0.5rem auto 1rem auto;
+}
+.container .first-page .form .info {
+  margin-bottom: 15px;
+}
+.container .first-page .form .info label {
+  font-size: 1rem;
+  color: #ffc709;
+}
+.container .first-page .form .info label input {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ffc709;
+  margin: 5px auto;
+  width: 100%;
+  height: 2rem;
+  padding: 1rem;
+  outline: none;
+}
+.container .first-page .form .time {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container .first-page .form .time h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ffc709;
+}
+.container .first-page .form .time .time-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.container .first-page .form .time .time-wrapper .time-value input {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ffc709;
+  margin: 5px auto;
+  width: 75px;
+  height: 2rem;
+  padding: 1rem;
+  outline: none;
+}
+.container .first-page .form .time .time-wrapper label {
+  color: #ffc709;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 25px;
+}
+.container .first-page .form .time .time-wrapper label input {
+  margin-top: 2px;
+}
+.container .first-page .form .button #btn-submit {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #ffc709;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  transition: all 300ms ease;
+  background-color: #222;
+  color: #ffc709;
+}
+.container .first-page .form .button #btn-submit:hover {
+  background-color: #ffc709;
+  color: #222;
+  box-shadow: 0 0 8px #ffc709;
+  cursor: pointer;
+}
+.container .second-page {
+  color: #ffc709;
+  text-align: center;
+  width: 300px;
+}
+.container .second-page h1 {
+  margin: 50% auto;
+  font-size: 1.5rem;
+}
+
+.span-error {
+  font-size: 0.8rem;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  width: 80px;
+  margin: 50% auto;
+}/*# sourceMappingURL=main.css.map */
